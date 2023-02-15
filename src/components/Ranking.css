@@ -50,12 +50,20 @@
 }
 
 .backHomeBtn {
-  background: #2fc18c;
+  background: #4a0de6;
   border: none;
   border-radius: 3rem;
   color: white;
   height: 2rem;
   width: 16rem;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.mainConteinerRanking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and ( max-width : 767px ) {

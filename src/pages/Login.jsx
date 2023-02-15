@@ -101,7 +101,7 @@ class Login extends React.Component {
           >
             Play
           </button>
-          <button
+          {/* <button
             onClick={ this.handleSettings }
             type="button"
             title="ConfigButton"
@@ -109,7 +109,7 @@ class Login extends React.Component {
             className="settings-btn"
           >
             Configuração
-          </button>
+          </button> */}
         </div>
       </div>
     );
