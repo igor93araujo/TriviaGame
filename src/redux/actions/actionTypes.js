@@ -4,3 +4,4 @@ export const ADD_SCORE = 'ADD_SCORE';
 export const ADD_ASSERTIONS = 'ADD_ASSERTIONS';
 export const START_GAME = 'START_GAME';
 export const QUESTION_CLICK = 'QUESTION_CLICK';
+export const GET_ERROR = 'GET_ERROR';

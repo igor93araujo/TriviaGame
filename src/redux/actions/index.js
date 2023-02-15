@@ -4,6 +4,7 @@ import {
   START_GAME,
   ADD_SCORE,
   ADD_ASSERTIONS,
+  GET_ERROR,
 } from './actionTypes';
 
 export const startGame = (payload) => ({
