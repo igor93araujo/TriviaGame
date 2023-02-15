@@ -1,0 +1,45 @@
+header {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  height: 3rem;
+  justify-content: flex-end;
+  left: 0;
+  padding-right: 10%;
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+
+header img {
+  border-radius: 50%;
+  height: 60%;
+  margin-right: 2%;
+}
+
+header h2 {
+  color: white;
+  margin-right: 5%;
+}
+
+.userScore {
+  margin-right: 1%;
+}
+
+header p {
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and ( max-width : 767px ) {
+
+  header {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+}

@@ -1,0 +1,96 @@
+.feedbackConteiner {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.727);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px , rgba(0, 0, 0, 0.22) 0 15px 12px;
+  color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 4% 2%;
+  width: 100%;
+}
+
+.userScoreFb {
+  color: transparent;
+}
+
+.assertationFb {
+  align-items: center;
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  width: 60%;
+}
+
+.wellDoneFb {
+  color: #2fc18c;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.couldBeBetterFb {
+  color: #ea5d5d;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.feedbackBtns {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.feedbackBtns button {
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  height: 2rem;
+  width: 12rem;
+}
+
+.playAgainBtn {
+  background: #2fc18c;
+  border: none;
+}
+
+.verRankingBtn {
+  background: #00d5e2;
+  border: none;
+}
+
+.wellDoneFbImg {
+  border: 5px solid #2fc38c;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.couldBeBetterFbImg {
+  border: 5px solid #ea5d5d;
+  border-radius: 50%;
+  width: 20%;
+}
+
+@media screen and ( max-width : 767px ) {
+
+  .feedbackConteiner {
+    width: 80vw;
+  }
+
+  .assertationFb {
+    width: 80%;
+  }
+
+  .feedbackBtns {
+    flex-direction: column;
+    margin: auto;
+    width: 60vw;
+  }
+
+  .feedbackBtns button {
+    width: 70vw;
+  }
+}

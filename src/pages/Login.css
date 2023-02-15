@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inknut+Antiqua&family=Roboto:wght@400;700&display=swap') ;
+
+.loginPage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.loginPage img {
+  margin-bottom: -5%;
+  transform: scale(0.7);
+}
+
+.loginFormPage {
+  align-items: center;
+  background-color: rgba(220, 218, 218, 0.8);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  padding: 2% 4%;
+  width: fit-content;
+}
+
+.loginFormPage p {
+  font: 800;
+  font-family: Inknut Antiqua , serif;
+  font-size: large;
+}
+
+.loginFormPage input {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  height: 50%;
+  padding: 0.5rem 1rem;
+  width: 30%;
+}
+
+.loginFormPage button {
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  width: 50%;
+}
+
+.loginBtn {
+  background-color: #2fc18c;
+  cursor: pointer;
+  margin: 2% 0;
+}
+
+.loginBtnOff {
+  background-color: #98f1d1;
+  margin: 2% 0;
+}
+
+.settings-btn {
+  background-color: #35906f;
+  cursor: pointer;
+}
+
+@media screen and ( max-width : 767px ) {
+
+  .loginPage {
+    height: 100vh;
+  }
+
+  .loginPage img {
+    padding-bottom: 30%;
+    transform: scale(0.6);
+  }
+
+  .loginFormPage {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin-top: -40%;
+    width: 80%;
+  }
+
+
+  .loginInpts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginInpts input {
+    margin-bottom: 5%;
+    width: 70%;
+  }
+}

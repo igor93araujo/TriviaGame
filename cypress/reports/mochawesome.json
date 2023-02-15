@@ -1,0 +1,355 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-02-09T21:43:27.878Z",
+    "end": "2023-02-09T21:43:30.818Z",
+    "duration": 2940,
+    "testsRegistered": 10,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 6,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "817ca7d2-0416-454c-ba73-05ae684f9817",
+      "title": "",
+      "fullFile": "cypress/e2e/01-04-tela-de-login.cy.js",
+      "file": "cypress/e2e/01-04-tela-de-login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+          "title": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado se é possível escrever o nome da pessoa jogadora",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se é possível escrever o nome da pessoa jogadora",
+              "timedOut": null,
+              "duration": 586,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type(PLAYER_NAME);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - [TELA DE LOGIN] Crie a ...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - [TELA DE LOGIN] Crie a ...`\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:33943/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142340:11)\n    at tryCatcher (http://localhost:33943/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:33943/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:33943/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:33943/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:33943/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:33943/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:33943/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/01-04-tela-de-login.cy.js:18:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "9f165f1e-34aa-42ec-97b8-3871c5b72aca",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado se é possível escrever o email da pessoa jogadora",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se é possível escrever o email da pessoa jogadora",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(PLAYER_EMAIL);",
+              "err": {},
+              "uuid": "f384667e-b10b-4c99-9bb1-9e82b114b3ef",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora não preencher nenhum campo",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora não preencher nenhum campo",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "d1bb620c-e8d5-46fa-8f28-d2c73aa9add9",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora escrever apenas o nome",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora escrever apenas o nome",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type(PLAYER_NAME);\ncy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "56fa9fcf-c179-4496-8fd5-20bba48e66e1",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora escrever apenas o email",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se o botão \"Play\" está desabilitado quando a pessoa jogadora escrever apenas o email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(PLAYER_EMAIL);\ncy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "367e2f18-23f4-4acf-872a-40346e6111ef",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado se o botão \"Play\" está habilitado quando a pessoa jogadora preencher os campos de nome e email",
+              "fullTitle": "1 - [TELA DE LOGIN] Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo Será validado se o botão \"Play\" está habilitado quando a pessoa jogadora preencher os campos de nome e email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type(PLAYER_NAME);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(PLAYER_EMAIL);\ncy.get(BUTTON_PLAY_SELECTOR).should('not.be.disabled');",
+              "err": {},
+              "uuid": "a8d57d7c-28d1-4c98-9ec2-759e8d3ec780",
+              "parentUUID": "21653907-a181-4d7a-a1c9-3f22448e51a3",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9f165f1e-34aa-42ec-97b8-3871c5b72aca"
+          ],
+          "pending": [],
+          "skipped": [
+            "f384667e-b10b-4c99-9bb1-9e82b114b3ef",
+            "d1bb620c-e8d5-46fa-8f28-d2c73aa9add9",
+            "56fa9fcf-c179-4496-8fd5-20bba48e66e1",
+            "367e2f18-23f4-4acf-872a-40346e6111ef",
+            "a8d57d7c-28d1-4c98-9ec2-759e8d3ec780"
+          ],
+          "duration": 586,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "149f5b42-4e6d-47cc-8454-934894462227",
+          "title": "2 - [TELA DE LOGIN] Crie o botão de iniciar o jogo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado se ao clicar no botão \"Play\" o jogo é iniciado salvando um token de jogador e redirecionando para a tela de jogo",
+              "fullTitle": "2 - [TELA DE LOGIN] Crie o botão de iniciar o jogo Será validado se ao clicar no botão \"Play\" o jogo é iniciado salvando um token de jogador e redirecionando para a tela de jogo",
+              "timedOut": null,
+              "duration": 546,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type(PLAYER_NAME);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(PLAYER_EMAIL);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.window().its('fetch').should('be.calledWith', FETCH_TOKEN_URL);\ncy.window().its('localStorage.token').should(token => {\n  expect(token).to.equal(tokenResponseMock.token);\n});\ncy.location().should(location => {\n  expect(location.pathname).not.to.eq('/');\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2 - [TELA DE LOGIN] Crie o ...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2 - [TELA DE LOGIN] Crie o ...`\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:33943/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142340:11)\n    at tryCatcher (http://localhost:33943/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:33943/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:33943/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:33943/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:33943/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:33943/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:33943/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/01-04-tela-de-login.cy.js:56:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "5d537e1f-f2ad-497c-a1ea-3c8b238c40d1",
+              "parentUUID": "149f5b42-4e6d-47cc-8454-934894462227",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5d537e1f-f2ad-497c-a1ea-3c8b238c40d1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 546,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7d823fe8-9548-4e15-8250-26e037c1f6ae",
+          "title": "3 - [TELA DE LOGIN] Crie um botão na tela inicial que leve para a tela de configurações",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado se o botão existe na página",
+              "fullTitle": "3 - [TELA DE LOGIN] Crie um botão na tela inicial que leve para a tela de configurações Será validado se o botão existe na página",
+              "timedOut": null,
+              "duration": 580,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_SETTINGS_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - [TELA DE LOGIN] Crie um...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - [TELA DE LOGIN] Crie um...`\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:33943/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:142340:11)\n    at tryCatcher (http://localhost:33943/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:33943/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:33943/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:33943/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:33943/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:33943/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:33943/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/01-04-tela-de-login.cy.js:85:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "7c9d615a-90bf-4f23-b06c-0d6ee0d7605a",
+              "parentUUID": "7d823fe8-9548-4e15-8250-26e037c1f6ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado se a tela de configurações possui um título",
+              "fullTitle": "3 - [TELA DE LOGIN] Crie um botão na tela inicial que leve para a tela de configurações Será validado se a tela de configurações possui um título",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_SETTINGS_SELECTOR).click();\ncy.get(SETTINGS_TITLE_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "a4e53672-fc24-4a94-993b-bc57afd50bb9",
+              "parentUUID": "7d823fe8-9548-4e15-8250-26e037c1f6ae",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7c9d615a-90bf-4f23-b06c-0d6ee0d7605a"
+          ],
+          "pending": [],
+          "skipped": [
+            "a4e53672-fc24-4a94-993b-bc57afd50bb9"
+          ],
+          "duration": 580,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b648700c-8021-492b-902c-8d02b259f223",
+          "title": "4 - [TELA DE LOGIN] Desenvolva testes para atingir 90% de cobertura da tela de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica a cobertura de testes unitários",
+              "fullTitle": "4 - [TELA DE LOGIN] Desenvolva testes para atingir 90% de cobertura da tela de Login Verifica a cobertura de testes unitários",
+              "timedOut": null,
+              "duration": 1051,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getCoverage().its('Login.functions.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);\ncy.getCoverage().its('Login.lines.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:33943/__cypress/runner/cypress_runner.js:145912:78)\n    at tryCatcher (http://localhost:33943/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:33943/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:33943/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:33943/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:33943/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:33943/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:33943/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:33943/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/support/commands.js:26:45)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n  \n      at ChildProcess.exithandler (node:child_process:400:12)\n      at ChildProcess.emit (node:events:513:28)\n      at ChildProcess.emit (node:domain:489:12)\n      at maybeClose (node:internal/child_process:1093:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "c7184ff7-5cd7-4233-a9bb-18f79c2619b4",
+              "parentUUID": "b648700c-8021-492b-902c-8d02b259f223",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c7184ff7-5cd7-4233-a9bb-18f79c2619b4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1051,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

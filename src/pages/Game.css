@@ -1,0 +1,136 @@
+.visibleBtn {
+  display: block;
+}
+
+.invisibleBtn {
+  display: none;
+}
+
+.mainGame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameConteiner {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px , rgba(0, 0, 0, 0.22) 0 15px 12px;
+  display: flex;
+  height: 50vh;
+  padding: 4% 2%;
+  width: 80%;
+}
+
+.fireWorksGifs {
+  left: 1%;
+  position: absolute;
+  top: -20%;
+}
+
+.questionCategory {
+  background-color: yellow;
+  border-radius: 1rem;
+  font-size: x-large;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: -5%;
+  padding: 2% 10%;
+  width: fit-content;
+}
+
+.gameLeftBox {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+
+.question-text {
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+.time-box {
+  align-items: center;
+  color: red;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+}
+
+.questions-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.questionsBtn {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+}
+
+.questionsBtn button, .questions-box button {
+  margin: 5% 0 0 5%;
+}
+
+.questionsBtn button {
+  background-color: white;
+  border-radius: 30px;
+  text-align: left;
+}
+
+.nextBtn {
+  background-color: #2fc18c;
+  border: none;
+  color: wheat;
+  font-weight: 600;
+  width: 90%;
+}
+
+@media screen and ( max-width : 767px ) {
+
+  .gameConteiner {
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px , rgba(0, 0, 0, 0.22) 0 15px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+  }
+
+  .gameLeftBox, .questionCategory {
+    font-size: larger;
+  }
+
+  .questions-box {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+  }
+
+  .questionsBtn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .questionsBtn button, .questions-box button {
+    flex-wrap: wrap;
+    height: 2rem;
+    width: 80%;
+  }
+
+  .fireWorksGifs {
+    display: none;
+  }
+}
