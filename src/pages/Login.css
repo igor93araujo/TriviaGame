@@ -10,7 +10,7 @@
 }
 
 .loginPage img {
-  margin-bottom: -5%;
+  margin-bottom: -1%;
   transform: scale(0.7);
 }
 
@@ -23,7 +23,7 @@
   height: fit-content;
   justify-content: center;
   padding: 2% 4%;
-  width: fit-content;
+  width: 70vh;
 }
 
 .loginFormPage p {
@@ -31,6 +31,7 @@
   font-family: Inknut Antiqua , serif;
   font-size: large;
 }
+
 
 .loginFormPage input {
   border: 1px solid black;
@@ -79,7 +80,7 @@
   .loginFormPage {
     display: flex;
     flex-direction: column;
-    height: 30%;
+
     margin-top: -40%;
     width: 80%;
   }

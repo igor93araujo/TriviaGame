@@ -17,7 +17,7 @@
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px , rgba(0, 0, 0, 0.22) 0 15px 12px;
   display: flex;
-  height: 50vh;
+  height: 80%;
   padding: 4% 2%;
   width: 80%;
 }
@@ -104,6 +104,7 @@
     flex-direction: column;
     justify-content: center;
     width: 85%;
+    height: 60vh;
   }
 
   .gameLeftBox, .questionCategory {
